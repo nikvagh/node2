@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('../include/common_css'); %>
+</head>
+<body>
+    <%- include('../include/nav'); %>
+    <div class="container">
+        <h2>Hrs</h2>
+        <a href="" class="btn btn-info">Add New hr</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Description</th>
+                <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% listdata.forEach(function(row,index){ %>
+                    <tr>
+                        <th scope="row"><%= index+1 %></th>
+                        <td><%= row.name %></td>
+                        <td><%= row.description %></td>
+                        <td>
+                            <a href="" class="btn btn-primary">Edit</a>
+                            <a href="" class="btn btn-danger">Delete</a>
+                        </td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+    </div>
+
+    <%- include('../include/common_js'); %>
+</body>
+</html>

@@ -1,0 +1,71 @@
+steps :::
+
+
+install node
+set http server
+
+install npm
+install expres
+
+1.
+synchronus method:
+linear:
+ex.readFileSync
+
+asynchronus method:
+noe-linear (gmetem):
+ex.readFile
+
+2.
+event - driven
+load modual
+create object
+create event
+fire event - trigger with .emit
+
+
+====================
+npm user:
+uname:
+nikvagh
+pass:
+973732
+email:
+nikul@kartuminfotech.com
+
+
+======================================
+learning from:
+https://medium.com/@vsvaibhav2016/create-crud-application-in-express-js-9b88a5a94299
+
+live mongo db website:
+nikul@kartuminfotech.com
+973732@@
+
+
+
+install mongodb tuts:
+https://medium.com/@LondonAppBrewery/how-to-download-install-mongodb-on-windows-4ee4b3493514
+
+nodemon server.js
+
+mongo local URL:
+C:\Program Files\MongoDB\Server\4.4\data\
+
+new folder c://data/db
+
+
+install 
+express
+mongoos
+chalk
+nodemon
+body-parser
+
+1.
+npm init
+package name: [give name]
+
+entry point: server.js
+
+

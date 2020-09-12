@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <%- include('../include/common_css'); %>
+    
+</head>
+<body>
+    <%- include('../include/nav'); %>
+    <div class="container">
+        <h2>Emp</h2>
+        <form method="POST" action="<%=baseURL%>/employee/insert" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" class="form-control" name="name">
+            </div>
+            <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" name="email">
+            </div>
+            <div class="form-group">
+                <label for="">Phone</label>
+                <input type="text" class="form-control" name="phone">
+            </div>
+            <div class="form-group">
+                <label for="">Gender</label>
+                <select class="form-control" name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="">Profile</label>
+                <input type="file" class="form-control" name="profile">
+            </div>
+            <input type="submit" name="submit" value="submit" class="btn btn-primary" />
+        </form>
+    </div>
+
+    <%- include('../include/common_js'); %>
+
+</body>
+</html>
